@@ -25,22 +25,8 @@ footer, header, hgroup, menu, nav, section, main {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
-
 ol, ul {
   list-style: none; 
-}
-
-div.clear {
-  clear: both;
-  line-height: 0;
-  height: 0;
-  font-size: 0;
-  border: 0;
-  margin: 0;
-  padding: 0; 
 }
 
 img {
@@ -54,64 +40,6 @@ i, em {
 *, *:before, *:after {
   box-sizing: border-box; 
 }
-
-@media print {
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important; 
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline; 
-  }
-
-  a[href]:after {
-    content: " (" attr(href) ")"; 
-  }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")"; 
-  }
-
-  pre, blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; 
-  }
-
-  tr, img {
-    page-break-inside: avoid; 
-  }
-
-  img {
-    max-width: 100% !important; 
-  }
-
-  @page {
-    margin: 0.5cm;
-  }
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3; 
-  }
-
-  h2, h3 {
-    page-break-after: avoid; 
-  } }
-
-
-header, section, .project {
-  *zoom: 1; 
-}
-  header:before, section:before, .project:before, header:after, section:after, .project:after {
-    content: " ";
-    display: table; 
-  }
-  header:after, section:after, .project:after {
-    clear: both;
-  }
 
 .media-check {
   width: 0;
@@ -177,8 +105,9 @@ body {
   background: white;
   color: #111;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2vw;
-  line-height: 1.35em;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
   -moz-animation: pageFadeIn 1200ms;
   -ms-animation: pageFadeIn 1200ms;
   -webkit-animation: pageFadeIn 1200ms;
@@ -187,15 +116,11 @@ body {
 }
   @media (min-width: 1440px) {
     body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 28px;
-      line-height: 1.35em; 
+      font-size: 24px;
     } }
   @media (max-width: 760px) {
     body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 6vw;
-      line-height: 1.3em; 
+      font-size: 4vw;
     } }
 
 a {
@@ -222,58 +147,20 @@ a:hover {
   clear: both; 
 }
 
-@-moz-keyframes rotates {
-  0% {
-    transform: rotate(0deg); 
-  }
-
-  100% {
-    transform: rotate(360deg); 
-  } }
-@-ms-keyframes rotates {
-  0% {
-    transform: rotate(0deg); 
-  }
-
-  100% {
-    transform: rotate(360deg);
-   } }
-@-webkit-keyframes rotates {
-  0% {
-    transform: rotate(0deg); 
-  }
-
-  100% {
-    transform: rotate(360deg); 
-  } }
-@keyframes rotates {
-  0% {
-    transform: rotate(0deg); 
-  }
-
-  100% {
-    transform: rotate(360deg); 
-  } }
 .big {
-  font-family: 'Public Sans', sans-serif;
   font-size: 2.5vw;
   line-height: 1.3em; 
 }
   @media (min-width: 1440px) {
     .big {
-      font-family: 'Public Sans', sans-serif;
       font-size: 36px;
       line-height: 1.3em; 
     } }
   @media (max-width: 760px) {
     .big {
-      font-family: 'Public Sans', sans-serif;
       font-size: 6vw;
       line-height: 1.3em;
      } }
-
-.big p + p {
-  margin-top: 0.75em; }
 
 header {
   padding: 10vw 17vw 2.5vw;
@@ -319,17 +206,8 @@ h2 .underline:after {
   background: rgb(0, 0, 0); 
 }
 
-p .mail-link:after {
-  background: #33f; 
-}
-
 a.underline:hover:after {
   background: #777777; 
-}
-
-.nowrap {
-  display: inline-block;
-  white-space: no-wrap; 
 }
 
 section {
