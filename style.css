@@ -105,9 +105,8 @@ body {
   background: white;
   color: #111;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.3em;
-  line-height: 1.5em;
-  margin-bottom: 0.5em;
+  font-size: 2vw;
+  line-height: 1.4em;
   -moz-animation: pageFadeIn 1200ms;
   -ms-animation: pageFadeIn 1200ms;
   -webkit-animation: pageFadeIn 1200ms;
@@ -116,11 +115,11 @@ body {
 }
   @media (min-width: 1440px) {
     body {
-      font-size: 24px;
+      font-size: 26px;
     } }
   @media (max-width: 760px) {
     body {
-      font-size: 4vw;
+      font-size: 5vw;
     } }
 
 a {
